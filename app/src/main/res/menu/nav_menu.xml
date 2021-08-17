@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_menu_fragment1"
+        android:title="Hesabim"/>
+    <item
+        android:id="@+id/nav_menu_fragment2"
+        android:title="Emirlerim"/>
+    <item
+        android:id="@+id/nav_menu_fragment3"
+        android:title="Portfoyüm"/>
+    <item
+        android:id="@+id/nav_menu_fragment4"
+        android:title="Piyasa Bilgileri"/>
+    <item
+        android:id="@+id/nav_menu_fragment5"
+        android:title="Pay Alış/Satış"/>
+    <item
+        android:id="@+id/nav_menu_fragment6"
+        android:title="VİOP Alış/Satış"/>
+    <item
+        android:id="@+id/nav_menu_fragment7"
+        android:title="EFT/Havale Talebi"/>
+    <item
+        android:id="@+id/nav_menu_fragment8"
+        android:title="Raporlar"/>
+    <item
+        android:id="@+id/nav_menu_fragment9"
+        android:title="VİOP Teminat İşlemleri"/>
+    <item
+        android:id="@+id/nav_menu_fragment10"
+        android:title="Döviz Alış/Satış"/>
+    <item
+        android:id="@+id/nav_menu_fragment11"
+        android:title="Halka Arz"/>
+    <item
+        android:id="@+id/nav_menu_fragment12"
+        android:title="Sözleşmeler"/>
+    <item
+        android:id="@+id/nav_menu_fragment13"
+        android:title="Bülten"/>
+    <item
+        android:id="@+id/nav_menu_fragment14"
+        android:title="Sentetik Emmirler"/>
+    <item
+        android:id="@+id/nav_menu_fragment15"
+        android:title="Ayarlar"/>
+
+</menu>

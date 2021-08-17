@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+
+            android:id="@+id/nav_anasayfa"
+            android:title=""
+            android:icon="@drawable/ic_anasayfa"
+            />
+        <item
+
+            android:id="@+id/nav_hesap"
+            android:title=""
+            android:icon="@drawable/ic_portf"
+            />
+        <item
+
+            android:id="@+id/nav_emir"
+            android:title=""
+            android:icon="@drawable/ic_emir"
+            />
+        <item
+
+            android:id="@+id/nav_piyasa"
+            android:title=""
+            android:icon="@drawable/ic_piyasa"
+            />
+</menu>
