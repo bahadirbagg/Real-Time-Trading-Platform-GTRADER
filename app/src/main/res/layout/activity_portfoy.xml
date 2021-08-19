@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/portfoy_activity_drawerLayout"
     tools:context=".PortfoyActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
     <RelativeLayout
-        android:layout_width="411dp"
-        android:layout_height="590dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_appbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hesap_activity_toolBar">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
 
         <View
             android:layout_width="match_parent"
@@ -45,10 +43,6 @@
 
 
 
-
-    </RelativeLayout>
-    </ScrollView>
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/hesap_activity_toolBar"
         android:layout_width="match_parent"
@@ -58,13 +52,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/backicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/backbutton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            />
 
         <TextView
             android:id="@+id/textH"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginLeft="110dp"
+            android:layout_marginRight="40dp"
             android:layout_marginTop="10dp"
+            android:gravity="center"
             android:text="Portföyüm"
             android:textColor="#B10C11"
             android:textSize="36dp"
@@ -75,8 +79,24 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/portfoy_activity_toolBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="15dp"
+
+            />
 
 
+        <FrameLayout
+            android:id="@+id/portfoy_activity_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <com.google.android.material.appbar.AppBarLayout
 
         android:id="@+id/bottom_appbar"
@@ -95,7 +115,13 @@
             />
 
     </com.google.android.material.appbar.AppBarLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:id="@+id/portfoy_activity_navigationView"
+        android:layout_gravity="start"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/headerlayout"
+        app:menu="@menu/nav_menu"/>
+</androidx.drawerlayout.widget.DrawerLayout>

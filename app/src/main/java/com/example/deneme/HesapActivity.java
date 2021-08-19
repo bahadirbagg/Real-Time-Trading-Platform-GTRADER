@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -39,6 +40,8 @@ public class HesapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hesap);
 
+        ImageView backIcon = findViewById(R.id.backicon);
+
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
@@ -48,16 +51,7 @@ public class HesapActivity extends AppCompatActivity {
 
         mDrawer = (DrawerLayout) findViewById(R.id.hesap_activity_drawerLayout);
         mNav = (NavigationView) findViewById(R.id.hesap_activity_navigationView);
-        mToolbar = (Toolbar) findViewById(R.id.hesap_activity_toolBar);
-
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                setContentView(R.layout.hesap_viop);
-            }
-        });
-
+        mToolbar = (Toolbar) findViewById(R.id.hesap_activity_toolBar2);
 
 
         mToggle = new ActionBarDrawerToggle(this, mDrawer,mToolbar,R.string.nav_open,R.string.nav_close);
@@ -92,6 +86,18 @@ public class HesapActivity extends AppCompatActivity {
 
 
             }
+        });
+        backIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HesapActivity.this,MainActivity.class));
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+                public void onClick(View view) {
+                    setContentView(R.layout.hesap_viop);
+                }
         });
       
     }

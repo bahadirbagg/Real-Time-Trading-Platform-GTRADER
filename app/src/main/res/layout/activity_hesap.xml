@@ -13,10 +13,7 @@
       android:id="@+id/relativeLayout"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent">
+   >
 
     <Button
         android:background="@color/white"
@@ -403,6 +400,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+      <ImageView
+          android:id="@+id/backicon"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:src="@drawable/backbutton"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_alignParentTop="true"/>
 
       <TextView
           android:id="@+id/textH"
@@ -417,6 +422,20 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/hesap_activity_toolBar2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="15dp"
+
+        />
+    <FrameLayout
+        android:id="@+id/main_activity_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
@@ -429,14 +448,6 @@
   </RelativeLayout>
 
 
-
-  <com.google.android.material.navigation.NavigationView
-      android:id="@+id/hesap_activity_navigationView"
-      android:layout_width="wrap_content"
-      android:layout_height="match_parent"
-      android:layout_gravity="start"
-      app:headerLayout="@layout/headerlayout"
-      app:menu="@menu/nav_menu" />
 
   <androidx.constraintlayout.widget.ConstraintLayout
       android:layout_width="match_parent"
@@ -465,6 +476,12 @@
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 
-
+  <com.google.android.material.navigation.NavigationView
+      android:id="@+id/hesap_activity_navigationView"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_gravity="start"
+      app:headerLayout="@layout/headerlayout"
+      app:menu="@menu/nav_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
