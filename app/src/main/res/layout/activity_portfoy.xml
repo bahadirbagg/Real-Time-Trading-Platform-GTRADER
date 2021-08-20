@@ -8,6 +8,7 @@
     tools:context=".PortfoyActivity">
 
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,6 +40,51 @@
             android:layout_marginTop="250dp"
             android:layout_marginLeft="200dp"
             android:hint="VİOP"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="300dp"
+            android:layout_marginBottom="250dp"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Toplam Nakit(T2):                                      $"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Anlık Kz:                                                         $"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Toplam Portföyün%:                                   $"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Portföy Değeri:                                             $"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Pay Portföy:                                                   $"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
 
 
 

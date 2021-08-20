@@ -83,6 +83,7 @@ public class EmirActivity extends AppCompatActivity {
             }
         });
 
+
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =

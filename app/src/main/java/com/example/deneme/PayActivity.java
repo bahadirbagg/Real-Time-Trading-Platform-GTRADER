@@ -9,6 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -27,6 +28,7 @@ public class PayActivity extends AppCompatActivity {
         mDrawer = (DrawerLayout) findViewById(R.id.pay_activity_drawerLayout);
         mNav = (NavigationView) findViewById(R.id.pay_activity_navigationView);
         mToolbar = (Toolbar) findViewById(R.id.pay_activity_toolBar);
+
 
 
         mToggle = new ActionBarDrawerToggle(this,mDrawer,mToolbar,R.string.nav_open,R.string.nav_close);

@@ -23,4 +23,7 @@
     <color name="BPP">#27134C</color>
     <color name="Mevduat">#BA715A</color>
     <color name="Nakit">#874D3B</color>
+    <color name="Green">#055108</color>
+    <color name="Yellow">#F19309</color>
+    <color name="Red">#BD0101</color>
 </resources>
