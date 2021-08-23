@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HesapViop">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hesap_viop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Nakit Teminat"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="₺0.00"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/hesap_w"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/hesap_viop"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/hesap_viop1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hesap_w"
+            android:layout_marginLeft="15dp"
+            android:text="Kullanabilir Teminat"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="₺0.00"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/hesap_viop1"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/hesap_w1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/hesap_viop1"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/hesap_viop2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hesap_w1"
+            android:layout_marginLeft="15dp"
+            android:text="Kullanabilir Bakiye"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="₺0.00"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/hesap_viop2"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/hesap_w2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/hesap_viop2"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/hesap_viop3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hesap_w2"
+            android:layout_marginLeft="15dp"
+            android:text="Anlık K/Z"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="-"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/hesap_viop3"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/hesap_w3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/hesap_viop3"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/hesap_viop4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hesap_w3"
+            android:layout_marginLeft="15dp"
+            android:text="V.Günlük Hacim"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="₺0.00"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/hesap_viop4"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/hesap_w4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/hesap_viop4"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray" />
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

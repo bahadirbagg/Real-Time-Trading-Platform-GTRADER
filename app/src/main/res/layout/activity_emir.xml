@@ -11,79 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginTop="185dp"
-            android:background="@android:color/darker_gray"/>
-        <Button
-            android:background="@color/white"
-            android:textColor="@android:color/black"
-            android:id="@+id/button1"
-            android:backgroundTint="@color/button_color_change"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="75dp"
-            android:layout_marginRight="200dp"
-            android:hint="Pay"
-            />
-
-        <Button
-            android:background="@android:color/white"
-            android:textColor="@android:color/black"
-            android:id="@+id/button2"
-            android:backgroundTint="@color/button_color_change"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="75dp"
-            android:layout_marginLeft="200dp"
-            android:hint="Vadeli"
-            app:layout_constraintEnd_toEndOf="@id/button1" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="105dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="130dp"
-            android:background="@drawable/btn_shape"
-            android:backgroundTint="@color/button_color_change"
-            android:hint="Tümü"
-            android:textColor="@color/button_text_color"
-
-            />
-        <Button
-            android:background="@drawable/btn_shape"
-            android:textColor="@android:color/black"
-            android:id="@+id/button4"
-            android:layout_width="105dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="130dp"
-            android:backgroundTint="@color/button_color_change"
-            android:hint="Bekleyen"
-            android:layout_marginLeft="105dp"
-             />
-        <Button
-            android:background="@drawable/btn_shape"
-            android:textColor="@android:color/black"
-            android:id="@+id/button5"
-            android:layout_width="105dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="130dp"
-            android:backgroundTint="@color/button_color_change"
-            android:layout_marginLeft="210dp"
-            android:hint="Gerçekleşen"
-           />
-        <Button
-            android:background="@drawable/btn_shape"
-            android:textColor="@android:color/black"
-            android:id="@+id/button6"
-            android:layout_width="100dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="130dp"
-            android:backgroundTint="@color/button_color_change"
-            android:layout_marginLeft="315dp"
-            android:hint="İptal"
-        />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/emir_activity_toolBar2"
@@ -139,79 +66,23 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emir_activity_toolBar2"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager2"
+            android:layout_width="match_parent"
+            android:layout_height="553dp"
+            android:layout_below="@id/tab_layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp" />
 
     </RelativeLayout>
-
-    <LinearLayout
-        android:id="@+id/linearL"
-        android:layout_marginTop="160dp"
-        android:layout_marginBottom="65dp"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="10dp"
-            android:hint="Pay adı "/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="10dp"
-            android:hint="A/S "    />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="10dp"
-            android:hint="Miktar "/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="10dp"
-            android:hint="Fiyat "/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="10dp"
-            android:hint="Durum "/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="10dp"
-            android:hint="Gerç Miktar "/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="10dp"
-            android:hint="Kalan "/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="10dp"
-            android:hint="Fiyat Tipi "/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="10dp"
-            android:hint="Süre "/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="10dp"
-            android:hint="Ort Gerç. Fiyat "/>
-
-    </LinearLayout>
 
 
 
@@ -232,9 +103,9 @@
             android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/windowBackground"
-            app:labelVisibilityMode="unlabeled"
-            app:menu="@menu/bottom_navigation"
+            android:background="@color/white"
+            app:menu="@menu/bottom_navigation2"
+            app:labelVisibilityMode="labeled"
             />
 
     </com.google.android.material.appbar.AppBarLayout>

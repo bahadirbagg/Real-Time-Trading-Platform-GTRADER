@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/scrollView"
+    android:orientation="vertical"
+    tools:context=".HesapNakit">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textVieww"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Toplam"
+            android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="₺0.00"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_alignParentEnd="true"
+                android:textSize="20dp" />
+
+        <View
+            android:id="@+id/wiewz"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textVieww"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+            />
+
+        <TextView
+            android:id="@id/textt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Nakit"
+            android:textSize="20dp"
+            android:layout_below="@id/wiewz"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="₺0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt2"
+                    android:textSize="20dp" />
+
+        <View
+            android:id="@+id/chip1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt2"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+            />
+
+                <TextView
+                    android:id="@id/textt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textt2"
+                    android:layout_marginLeft="15dp"
+                    android:text="T+1 Nakit"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="₺0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt3"
+                    android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt3"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@id/textt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textt3"
+            android:layout_marginLeft="15dp"
+            android:text="T+2 Nakit"
+            android:textSize="20dp"
+            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="₺0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt4"
+                    android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt4"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+           />
+
+        <TextView
+            android:id="@id/textt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textt4"
+            android:layout_marginLeft="15dp"
+            android:text="Anlık K/Z"
+            android:textSize="20dp"
+            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="₺0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt5"
+                    android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt5"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+           />
+
+        <TextView
+            android:id="@id/textt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textt5"
+            android:layout_marginLeft="15dp"
+            android:text="Portföy Değeri"
+            android:textSize="20dp"
+             />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="₺0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt6"
+                    android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt6"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+            />
+
+        <TextView
+            android:id="@id/textt7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textt6"
+            android:layout_marginLeft="15dp"
+            android:text="Pay"
+            android:textSize="20dp"
+          />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="₺0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt7"
+                    android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt7"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+            />
+
+        <TextView
+            android:id="@id/textt8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textt7"
+            android:layout_marginLeft="15dp"
+            android:text="Yatırım Fonu"
+            android:textSize="20dp"
+            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="₺0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt8"
+                    android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt8"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+           />
+
+        <TextView
+            android:id="@id/textt9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textt8"
+            android:layout_marginLeft="15dp"
+            android:text="Tahvil-Bono"
+            android:textSize="20dp"
+            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="₺0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt9"
+                    android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt9"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+      />
+
+        <TextView
+            android:id="@id/textt10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textt9"
+            android:layout_marginLeft="15dp"
+            android:text="Varant"
+            android:textSize="20dp"
+            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="₺0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt10"
+                    android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt10"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+           />
+
+        <TextView
+            android:id="@id/textt11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textt10"
+            android:layout_marginLeft="15dp"
+            android:text="Brüt Repo Dönüş Tutarı"
+            android:textSize="20dp"
+            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="₺0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt11"
+                    android:textSize="20dp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt11"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+           />
+
+        <TextView
+            android:id="@id/textt12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textt11"
+            android:layout_marginLeft="15dp"
+            android:text="Brüt BPP Dönüş Tutarı"
+            android:textSize="20dp"
+            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="₺0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt12"
+                    android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt12"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+            />
+
+        <TextView
+            android:id="@id/textt13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textt12"
+            android:layout_marginLeft="15dp"
+            android:text="Mevduat"
+            android:textSize="20dp"
+            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="₺0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt13"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/textt13"
+                    android:layout_marginLeft="15dp"
+                    android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@id/textt14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textt13"
+            android:layout_marginLeft="15dp"
+            android:text="Yabancı Para Değeri"
+            android:textSize="20dp"
+            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="₺0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt14"
+                    android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt14"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+            />
+
+        <TextView
+            android:id="@id/textt15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textt14"
+            android:layout_marginLeft="15dp"
+            android:text="Toplam Portföyün %"
+            android:textSize="20dp"
+            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="%0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt15"
+                    android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt15"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+            />
+
+        <TextView
+            android:id="@id/textt16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textt15"
+            android:layout_marginLeft="15dp"
+            android:text="Kredi Limiti"
+            android:textSize="20dp"
+            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="₺0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt16"
+                    android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt16"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+          />
+
+                <TextView
+                    android:id="@id/textt17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textt16"
+                    android:layout_marginLeft="15dp"
+                    android:text="Özkaynak Oranı %"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="%0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt17"
+                    android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt17"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+        />
+
+        <TextView
+            android:id="@id/textt18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textt17"
+            android:layout_marginLeft="15dp"
+            android:text="H. Günlük Hacim"
+            android:textSize="20dp"
+            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="₺0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/textt18"
+                    android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textt18"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"
+           />
+        </RelativeLayout>
+</LinearLayout>

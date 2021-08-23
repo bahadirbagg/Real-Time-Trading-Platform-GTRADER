@@ -146,66 +146,23 @@
             android:layout_marginTop="165dp"
             android:layout_marginLeft="180dp"
             />
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="230dp"
-            android:background="@drawable/btn_shape"
-            android:backgroundTint="@color/button_color_change"
-            android:hint="Emirler"
-            android:textColor="@color/button_text_color" />
-        <Button
-            android:background="@drawable/btn_shape"
-            android:textColor="@android:color/black"
-            android:id="@+id/buttonr"
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="230dp"
-            android:backgroundTint="@color/button_color_change"
-            android:hint="Pozisyon"
-            android:layout_marginLeft="70dp" />
-        <Button
-            android:background="@drawable/btn_shape"
-            android:textColor="@android:color/black"
-            android:id="@+id/buttonr1"
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="230dp"
-            android:backgroundTint="@color/button_color_change"
-            android:layout_marginLeft="140dp"
-            android:hint="Bakiye" />
-        <Button
-            android:background="@drawable/btn_shape"
-            android:textColor="@android:color/black"
-            android:id="@+id/buttonr2"
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="230dp"
-            android:backgroundTint="@color/button_color_change"
-            android:layout_marginLeft="210dp"
-            android:hint="Grafik"  />
-        <Button
-            android:background="@drawable/btn_shape"
-            android:textColor="@android:color/black"
-            android:id="@+id/buttonr3"
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="230dp"
-            android:backgroundTint="@color/button_color_change"
-            android:hint="Haberler"
-            android:layout_marginLeft="280dp"  />
-        <Button
-            android:background="@drawable/btn_shape"
-            android:textColor="@android:color/black"
-            android:id="@+id/buttonr4"
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="230dp"
-            android:backgroundTint="@color/button_color_change"
-            android:hint="Bilanço"
-            android:layout_marginLeft="350dp" />
 
+        <com.google.android.material.tabs.TabLayout
+            android:background="@drawable/btn_shape"
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager2"
+            android:layout_width="match_parent"
+            android:layout_height="553dp"
+            android:layout_below="@id/tab_layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp" />
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/relativeLayout2"
@@ -226,13 +183,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-
+            <ImageView
+                android:id="@+id/backbutton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/backbutton"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                />
             <TextView
                 android:id="@+id/textH"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginLeft="100dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="40dp"
                 android:layout_marginTop="10dp"
+                android:gravity="center"
                 android:text="Pay Alış/Satış"
                 android:textColor="#B10C11"
                 android:textSize="36dp" />
@@ -250,9 +216,10 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/pay_activity_toolBar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_alignParentTop="true" />
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="15dp" />
 
 
         <FrameLayout

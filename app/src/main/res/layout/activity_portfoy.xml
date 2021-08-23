@@ -7,8 +7,12 @@
     android:id="@+id/portfoy_activity_drawerLayout"
     tools:context=".PortfoyActivity">
 
-
-
+<ScrollView
+    android:layout_marginTop="75dp"
+    android:layout_marginBottom="60dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,71 +25,6 @@
             android:layout_height="2dp"
             android:layout_marginTop="0dp"
             android:background="@android:color/darker_gray" />
-        <Button
-            android:background="@color/white"
-            android:textColor="@android:color/black"
-            android:id="@+id/button_pay"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="250dp"
-            android:layout_marginRight="200dp"
-            android:hint="Pay"/>
-
-        <Button
-            android:background="@color/white"
-            android:textColor="@android:color/black"
-            android:id="@+id/button_viop"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="250dp"
-            android:layout_marginLeft="200dp"
-            android:hint="VİOP"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="300dp"
-            android:layout_marginBottom="250dp"
-            android:orientation="vertical">
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Toplam Nakit(T2):                                      $"
-                android:textSize="10dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"/>
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Anlık Kz:                                                         $"
-                android:textSize="10dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"/>
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Toplam Portföyün%:                                   $"
-                android:textSize="10dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"/>
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Portföy Değeri:                                             $"
-                android:textSize="10dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"/>
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Pay Portföy:                                                   $"
-                android:textSize="10dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"/>
-
-
-        </LinearLayout>
-
 
 
 
@@ -139,6 +78,23 @@
             android:id="@+id/portfoy_activity_frameLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager2"
+            android:layout_width="match_parent"
+            android:layout_height="553dp"
+            android:layout_below="@id/tab_layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp" />
+
     </RelativeLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -156,8 +112,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?android:attr/windowBackground"
-            app:labelVisibilityMode="unlabeled"
-            app:menu="@menu/bottom_navigation"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigation3"
             />
 
     </com.google.android.material.appbar.AppBarLayout>

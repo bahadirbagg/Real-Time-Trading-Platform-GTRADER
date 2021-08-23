@@ -5,13 +5,18 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentManager;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.tabs.TabLayout;
 
 public class PayActivity extends AppCompatActivity {
 
@@ -19,17 +24,23 @@ public class PayActivity extends AppCompatActivity {
     private NavigationView mNav;
     private Toolbar mToolbar;
     private ActionBarDrawerToggle mToggle;
+    TabLayout tabLayout;
+    ViewPager2 pager2;
+    FragmentAdapter4 adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay);
 
+        ImageView backIcon = findViewById(R.id.backbutton);
+
         mDrawer = (DrawerLayout) findViewById(R.id.pay_activity_drawerLayout);
         mNav = (NavigationView) findViewById(R.id.pay_activity_navigationView);
         mToolbar = (Toolbar) findViewById(R.id.pay_activity_toolBar);
 
-
+        tabLayout= findViewById(R.id.tab_layout);
+        pager2= findViewById(R.id.view_pager2);
 
         mToggle = new ActionBarDrawerToggle(this,mDrawer,mToolbar,R.string.nav_open,R.string.nav_close);
         mDrawer.addDrawerListener(mToggle);
@@ -65,6 +76,48 @@ public class PayActivity extends AppCompatActivity {
 
             }
         });
+        FragmentManager fm = getSupportFragmentManager();
+        adapter = new FragmentAdapter4(fm,getLifecycle());
+        pager2.setAdapter(adapter);
+
+        tabLayout.addTab(tabLayout.newTab().setText("Emirler"));
+        tabLayout.addTab(tabLayout.newTab().setText("Pozisyon"));
+        tabLayout.addTab(tabLayout.newTab().setText("Bakiye"));
+        tabLayout.addTab(tabLayout.newTab().setText("Grafik"));
+        tabLayout.addTab(tabLayout.newTab().setText("Haber"));
+        tabLayout.addTab(tabLayout.newTab().setText("Bilanço"));
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                pager2.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+
+        pager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                tabLayout.selectTab(tabLayout.getTabAt(position));
+            }
+        });
+        backIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PayActivity.this,MainActivity.class));
+            }
+        });
+
 
     }
+
 }

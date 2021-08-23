@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmirPay"
+    android:id="@+id/relative">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="105dp"
+        android:layout_height="20dp"
+        android:background="@drawable/btn_shape"
+        android:backgroundTint="@color/button_color_change"
+        android:text="Tümü"
+        android:textColor="@color/black"
+
+        />
+    <Button
+        android:background="@drawable/btn_shape"
+        android:textColor="@android:color/black"
+        android:id="@+id/button4"
+        android:layout_width="105dp"
+        android:layout_height="20dp"
+        android:backgroundTint="@color/button_color_change"
+        android:text="Bekleyen"
+        android:layout_marginLeft="105dp"
+        />
+    <Button
+        android:background="@drawable/btn_shape"
+        android:textColor="@android:color/black"
+        android:id="@+id/button5"
+        android:layout_width="105dp"
+        android:layout_height="20dp"
+
+        android:backgroundTint="@color/button_color_change"
+        android:layout_marginLeft="210dp"
+        android:text="Gerçekleşen"
+        />
+    <Button
+        android:background="@drawable/btn_shape"
+        android:textColor="@android:color/black"
+        android:id="@+id/button6"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:backgroundTint="@color/button_color_change"
+        android:layout_marginLeft="315dp"
+        android:text="İptal"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linearL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginTop="30dp"
+      >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Pay adı "
+            android:textSize="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="A/S "
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Miktar "
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fiyat "
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Durum "
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Gerç Miktar "
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kalan "
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fiyat Tipi "
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Süre "
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ort Gerç. Fiyat "
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

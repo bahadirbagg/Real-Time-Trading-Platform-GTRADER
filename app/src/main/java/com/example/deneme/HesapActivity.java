@@ -7,6 +7,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +20,7 @@ import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.tabs.TabLayout;
 
 public class HesapActivity extends AppCompatActivity {
 
@@ -25,9 +28,11 @@ public class HesapActivity extends AppCompatActivity {
     private NavigationView mNav;
     private Toolbar mToolbar;
     private ActionBarDrawerToggle mToggle;
-    Button button1;
-    Button button2;
     TextView textV;
+    TabLayout tabLayout;
+    ViewPager2 pager2;
+    FragmentAdapter adapter;
+
 
     BottomNavigationView bottomNavigationView;
 
@@ -45,9 +50,13 @@ public class HesapActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
-        button1 = (Button) findViewById(R.id.button_nakit);
-        button2 = (Button) findViewById(R.id.button_viop);
+
         textV = (TextView) findViewById(R.id.textVieww);
+
+        tabLayout= findViewById(R.id.tab_layout);
+        pager2= findViewById(R.id.view_pager2);
+
+
 
         mDrawer = (DrawerLayout) findViewById(R.id.hesap_activity_drawerLayout);
         mNav = (NavigationView) findViewById(R.id.hesap_activity_navigationView);
@@ -93,13 +102,38 @@ public class HesapActivity extends AppCompatActivity {
                 startActivity(new Intent(HesapActivity.this,MainActivity.class));
             }
         });
-        button2.setOnClickListener(new View.OnClickListener() {
+
+        FragmentManager fm = getSupportFragmentManager();
+        adapter = new FragmentAdapter(fm,getLifecycle());
+        pager2.setAdapter(adapter);
+
+        tabLayout.addTab(tabLayout.newTab().setText("Nakit"));
+        tabLayout.addTab(tabLayout.newTab().setText("Viop"));
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
-                public void onClick(View view) {
-                    setContentView(R.layout.hesap_viop);
-                }
+            public void onTabSelected(TabLayout.Tab tab) {
+                pager2.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
         });
-      
+
+        pager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                tabLayout.selectTab(tabLayout.getTabAt(position));
+            }
+        });
+
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
@@ -116,7 +150,7 @@ public class HesapActivity extends AppCompatActivity {
                             break;
                         case R.id.nav_hesap:
 
-                            startActivity(new Intent(HesapActivity.this,HesapActivity.class));
+                            startActivity(new Intent(HesapActivity.this,PortfoyActivity.class));
 
                             break;
                         case R.id.nav_emir:
