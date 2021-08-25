@@ -13,10 +13,13 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
+
+import org.eazegraph.lib.charts.PieChart;
 
 public class PortfoyActivity extends AppCompatActivity {
 
@@ -28,6 +31,12 @@ public class PortfoyActivity extends AppCompatActivity {
     ViewPager2 pager2;
     FragmentAdapter3 adapter;
 
+    TextView tvR;
+    TextView tvPython;
+    TextView tvCPP;
+    TextView tvJava;
+    PieChart pieChart;
+
 
 
     BottomNavigationView bottomNavigationView;
@@ -38,6 +47,7 @@ public class PortfoyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_portfoy);
 
         ImageView backIcon = findViewById(R.id.backicon);
+
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
@@ -85,6 +95,7 @@ public class PortfoyActivity extends AppCompatActivity {
 
             }
         });
+
         backIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

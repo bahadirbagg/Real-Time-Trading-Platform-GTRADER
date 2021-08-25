@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.google.android.material.navigation.NavigationView;
@@ -27,12 +28,20 @@ public class ViopActivity extends AppCompatActivity {
     ViewPager2 pager2;
     FragmentAdapter4 adapter;
 
+    private Button alışButton;
+    private Button satışButton;
+    private Button iletButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_viop);
 
             ImageView backIcon = findViewById(R.id.backbutton);
+
+            alışButton = (Button) findViewById(R.id.alış);
+            satışButton = (Button) findViewById(R.id.satış);
+            iletButton = (Button) findViewById(R.id.ilet);
 
             mDrawer = (DrawerLayout) findViewById(R.id.viop_activity_drawerLayout);
             mNav = (NavigationView) findViewById(R.id.viop_activity_navigationView);
@@ -82,6 +91,31 @@ public class ViopActivity extends AppCompatActivity {
 
             }
         });
+        alışButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alışButton.setBackgroundResource(R.drawable.btn_shape11);
+                alışButton.setTextColor(getApplication().getResources().getColor(R.color.white));
+                iletButton.setTextColor(getApplication().getResources().getColor(R.color.white));
+                iletButton.setBackgroundColor(getApplication().getResources().getColor(R.color.Green));
+                satışButton.setBackgroundResource(R.drawable.btn_shape3);
+                satışButton.setTextColor(getApplication().getResources().getColor(R.color.Red));
+
+            }
+        });
+        satışButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                satışButton.setBackgroundResource(R.drawable.btn_shape33);
+                satışButton.setTextColor(getApplication().getResources().getColor(R.color.white));
+                iletButton.setTextColor(getApplication().getResources().getColor(R.color.white));
+                iletButton.setBackgroundColor(getApplication().getResources().getColor(R.color.Red));
+                alışButton.setBackgroundResource(R.drawable.btn_shape);
+                alışButton.setTextColor(getApplication().getResources().getColor(R.color.Green));
+
+            }
+        });
+
         FragmentManager fm = getSupportFragmentManager();
         adapter = new FragmentAdapter4(fm,getLifecycle());
         pager2.setAdapter(adapter);

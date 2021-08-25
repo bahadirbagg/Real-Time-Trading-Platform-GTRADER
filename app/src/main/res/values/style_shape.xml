@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Left" parent="">
+        <item name="cornerSize">0dp</item>
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSizeBottomLeft">500dp</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+
+    </style>
+    <style name="Right" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerFamilyTopLeft">cut</item>
+        <item name="cornerFamilyBottomLeft">cut</item>
+        <item name="cornerSizeTopRight">100dp</item>
+        <item name="cornerSizeBottomRight">100dp</item>
+    </style>
+</resources>

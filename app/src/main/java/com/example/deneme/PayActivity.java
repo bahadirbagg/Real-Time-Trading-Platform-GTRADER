@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,12 +29,55 @@ public class PayActivity extends AppCompatActivity {
     ViewPager2 pager2;
     FragmentAdapter4 adapter;
 
+    private Button alışButton;
+    private Button satışButton;
+    private Button iletButton;
+    private Button açığaButton;
+
+    int minteger = 0;
+    int minteger2 = 0;
+
+    TextView sText;
+    TextView sText2;
+    int counter=0;
+    int counter2=0;
+    String[] stringText = new String[]{
+            "LMT",
+            "PYS",
+            "PYL"
+    };
+    String[] stringTextLMT = new String[]{
+            "Gün",
+            "KIE",
+            "IKG"
+    };
+    String[] stringTextPYS = new String[]{
+            "KIE",
+            "DENGE",
+            "KIE"
+    };
+    String[] stringTextPYL = new String[]{
+            "Gün",
+            "KIE",
+            "Gün"
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay);
 
         ImageView backIcon = findViewById(R.id.backbutton);
+
+        sText = (TextView) findViewById(R.id.stext);
+        sText2 = (TextView) findViewById(R.id.stext2);
+        sText.setText(stringText[counter]);
+        sText2.setText(stringTextLMT[counter2]);
+
+        alışButton = (Button) findViewById(R.id.alış);
+        satışButton = (Button) findViewById(R.id.satış);
+        iletButton = (Button) findViewById(R.id.ilet);
+        açığaButton = (Button) findViewById(R.id.açığa);
 
         mDrawer = (DrawerLayout) findViewById(R.id.pay_activity_drawerLayout);
         mNav = (NavigationView) findViewById(R.id.pay_activity_navigationView);
@@ -73,6 +117,49 @@ public class PayActivity extends AppCompatActivity {
 
 
 
+
+            }
+        });
+
+        alışButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alışButton.setBackgroundResource(R.drawable.btn_shape11);
+                alışButton.setTextColor(getApplication().getResources().getColor(R.color.white));
+                iletButton.setTextColor(getApplication().getResources().getColor(R.color.white));
+                iletButton.setBackgroundColor(getApplication().getResources().getColor(R.color.Green));
+                satışButton.setBackgroundResource(R.drawable.btn_shape2);
+                satışButton.setTextColor(getApplication().getResources().getColor(R.color.Red));
+                açığaButton.setBackgroundResource(R.drawable.btn_shape4);
+                açığaButton.setTextColor(getApplication().getResources().getColor(R.color.Yellow));
+
+            }
+        });
+        satışButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                satışButton.setBackgroundResource(R.drawable.btn_shape22);
+                satışButton.setTextColor(getApplication().getResources().getColor(R.color.white));
+                iletButton.setTextColor(getApplication().getResources().getColor(R.color.white));
+                iletButton.setBackgroundColor(getApplication().getResources().getColor(R.color.Red));
+                alışButton.setBackgroundResource(R.drawable.btn_shape);
+                alışButton.setTextColor(getApplication().getResources().getColor(R.color.Green));
+                açığaButton.setBackgroundResource(R.drawable.btn_shape4);
+                açığaButton.setTextColor(getApplication().getResources().getColor(R.color.Yellow));
+
+            }
+        });
+        açığaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alışButton.setBackgroundResource(R.drawable.btn_shape);
+                alışButton.setTextColor(getApplication().getResources().getColor(R.color.Green));
+                iletButton.setTextColor(getApplication().getResources().getColor(R.color.white));
+                iletButton.setBackgroundColor(getApplication().getResources().getColor(R.color.Yellow));
+                satışButton.setBackgroundResource(R.drawable.btn_shape2);
+                satışButton.setTextColor(getApplication().getResources().getColor(R.color.Red));
+                açığaButton.setBackgroundResource(R.drawable.btn_shape44);
+                açığaButton.setTextColor(getApplication().getResources().getColor(R.color.white));
 
             }
         });
@@ -119,5 +206,95 @@ public class PayActivity extends AppCompatActivity {
 
 
     }
+    public  void next(View view){
 
-}
+        sText.setText(stringText[counter]);
+        counter++;
+        sText2.setText(stringTextPYL[0]);
+        if(counter==3) {
+            counter=0;
+        }
+        if (counter==2){
+            sText2.setText(stringTextPYS[0]);
+        }
+
+
+    }
+    public  void prev(View view){
+
+        if (counter==0){
+            counter=3;
+        }
+        counter--;
+        sText.setText(stringText[counter]);
+        sText2.setText(stringTextPYL[0]);
+        if (counter==1){
+            sText2.setText(stringTextPYS[0]);
+        }
+
+    }
+    public  void next2(View view){
+        if (stringText[counter]=="LMT") {
+            sText2.setText(stringTextLMT[counter2]);
+            counter2++;
+        }
+        if (stringText[counter]=="PYS") {
+            sText2.setText(stringTextPYS[counter2]);
+            counter2++;
+        }
+        if (stringText[counter]=="PYL") {
+            sText2.setText(stringTextPYL[counter2]);
+            counter2++;
+        }
+        if(counter2==3){
+            counter2=0;
+        }
+    }
+    public  void prev2(View view){
+
+
+        if (stringText[counter]=="LMT") {
+            sText2.setText(stringTextLMT[counter2]);
+            counter2--;
+        }
+        if (stringText[counter]=="PYS") {
+            sText2.setText(stringTextPYS[counter2]);
+            counter2--;
+        }
+        if (stringText[counter]=="PYL") {
+            sText2.setText(stringTextPYL[counter2]);
+            counter2--;
+        }
+        if(counter2==-1){
+            counter2=2;
+        }
+
+        }
+    public void increaseInteger(View view) {
+        minteger = minteger + 1;
+        display(minteger,minteger2);
+
+    }public void decreaseInteger(View view) {
+        minteger = minteger - 1;
+        display(minteger,minteger2);
+    }
+
+    public void increaseInteger2(View view) {
+        minteger2 = minteger2 + 1;
+        display(minteger,minteger2);
+
+    }public void decreaseInteger2(View view) {
+        minteger2 = minteger2 - 1;
+        display(minteger,minteger2);
+    }
+
+    private void display(int number,int number2) {
+        TextView displayInteger = (TextView) findViewById(
+                R.id.lot);
+        displayInteger.setText("" + number);
+
+        TextView displayInteger2 = (TextView) findViewById(
+                R.id.fiyat);
+        displayInteger2.setText("" + number2);
+    }
+    }
