@@ -6,8 +6,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-public class FragmentAdapter4 extends FragmentStateAdapter {
-    public FragmentAdapter4(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
+public class FragmentAdapter5 extends FragmentStateAdapter {
+    public FragmentAdapter5(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
         super(fragmentManager, lifecycle);
     }
 
@@ -18,9 +18,9 @@ public class FragmentAdapter4 extends FragmentStateAdapter {
         switch (position)
         {
             case 1:
-                return new PayPozisyon();
+                return new ViopPozisyon();
             case 2:
-                return new PayBakiye();
+                return new ViopTeminat();
             case 3:
                 return new PortfoyViop();
             case 4:

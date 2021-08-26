@@ -170,9 +170,7 @@ public class PayActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Emirler"));
         tabLayout.addTab(tabLayout.newTab().setText("Pozisyon"));
         tabLayout.addTab(tabLayout.newTab().setText("Bakiye"));
-        tabLayout.addTab(tabLayout.newTab().setText("Grafik"));
-        tabLayout.addTab(tabLayout.newTab().setText("Haber"));
-        tabLayout.addTab(tabLayout.newTab().setText("Bilanço"));
+
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -272,29 +270,32 @@ public class PayActivity extends AppCompatActivity {
         }
     public void increaseInteger(View view) {
         minteger = minteger + 1;
-        display(minteger,minteger2);
+        display(minteger);
 
     }public void decreaseInteger(View view) {
         minteger = minteger - 1;
-        display(minteger,minteger2);
+        display(minteger);
     }
 
     public void increaseInteger2(View view) {
         minteger2 = minteger2 + 1;
-        display(minteger,minteger2);
+        display2(minteger2);
 
     }public void decreaseInteger2(View view) {
         minteger2 = minteger2 - 1;
-        display(minteger,minteger2);
+        display2(minteger2);
     }
 
-    private void display(int number,int number2) {
+    private void display(int number) {
         TextView displayInteger = (TextView) findViewById(
                 R.id.lot);
         displayInteger.setText("" + number);
 
-        TextView displayInteger2 = (TextView) findViewById(
+    }
+    private void display2(int number) {
+        TextView displayInteger = (TextView) findViewById(
                 R.id.fiyat);
-        displayInteger2.setText("" + number2);
+        displayInteger.setText("" + number);
+
     }
     }
