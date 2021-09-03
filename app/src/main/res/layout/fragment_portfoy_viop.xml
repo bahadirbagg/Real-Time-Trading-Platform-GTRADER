@@ -259,13 +259,13 @@
                 android:layout_weight="1"
                 android:text="Sözleşme Kodu"/>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="47dp"
                 android:layout_height="wrap_content"
                 android:textSize="10dp"
                 android:layout_weight="1"
                 android:text="Uzun Kısa"/>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="42dp"
                 android:layout_height="wrap_content"
                 android:textSize="10dp"
                 android:layout_weight="1"
@@ -277,7 +277,7 @@
                 android:layout_weight="1"
                 android:text="Güniçi Maliyet"/>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="67dp"
                 android:layout_height="wrap_content"
                 android:textSize="10dp"
                 android:layout_weight="1"
@@ -289,23 +289,23 @@
                 android:layout_weight="1"
                 android:text="Para Birimi"/>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="45dp"
                 android:layout_height="wrap_content"
                 android:textSize="10dp"
                 android:layout_weight="1"
                 android:text="Son Fiyat"/>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:textSize="10dp"
                 android:layout_weight="1"
                 android:text="Alış Ort.Fiyatı"/>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="45dp"
                 android:layout_height="wrap_content"
                 android:textSize="10dp"
                 android:layout_weight="1"
-                android:text="Satış Ort.Fiyatı"/>
+                android:text="Satış Ort.  Fiyatı"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -332,7 +332,7 @@
                 android:text="Pasif Kısa"/>
             <TextView
                 android:id="@+id/son"
-                android:layout_width="wrap_content"
+                android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:textSize="10dp"
                 android:layout_weight="1"
@@ -347,7 +347,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_below="@+id/zz"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="68dp"
             android:background="@android:color/darker_gray"/>
     </RelativeLayout>
 </ScrollView>

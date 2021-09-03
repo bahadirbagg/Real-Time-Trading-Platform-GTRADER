@@ -62,7 +62,6 @@
             />
 
 
-
     </androidx.appcompat.widget.Toolbar>
 
         <androidx.appcompat.widget.Toolbar
@@ -95,6 +94,376 @@
             android:layout_alignParentEnd="true"
             android:layout_marginStart="0dp"
             android:layout_marginEnd="0dp" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewGraph"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="75dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+
+                <org.eazegraph.lib.charts.PieChart
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/piechart"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="6dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="15dp"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/Pay"/>
+
+
+                        <TextView
+                            android:id="@+id/tPay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pay"
+                            android:layout_marginLeft="20dp" />
+                            <TextView
+                                android:id="@+id/Pay"
+                                android:layout_width="15dp"
+                                android:layout_height="20dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="0"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/purple_500"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:layout_toRightOf="@+id/tPay"/>
+
+                            <View
+                                android:layout_marginLeft="90dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/Viop"/>
+
+
+                            <TextView
+                                android:id="@+id/tViop"
+                                android:layout_marginLeft="100dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="VİOP"
+                                android:paddingLeft="10dp"/>
+                            <TextView
+                                android:id="@+id/Viop"
+                                android:layout_width="15dp"
+                                android:layout_height="20dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="0"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/purple_500"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:layout_toRightOf="@+id/tViop"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+
+
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/Y.Fon"/>
+
+
+                            <TextView
+                                android:id="@+id/tYFon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Y.Fon" />
+                            <TextView
+                                android:id="@+id/YFon"
+                                android:layout_width="15dp"
+                                android:layout_height="20dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="0"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/purple_500"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:layout_toRightOf="@+id/tYFon"/>
+
+                            <View
+                                android:layout_marginLeft="90dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/Bono"/>
+
+                            <TextView
+                                android:id="@+id/tBono"
+                                android:layout_marginLeft="100dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bono"
+                                android:paddingLeft="10dp"/>
+                            <TextView
+                                android:id="@+id/Bono"
+                                android:layout_width="15dp"
+                                android:layout_height="20dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="0"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/purple_500"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:layout_toRightOf="@+id/tBono"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/Repo"/>
+
+                            <TextView
+                                android:id="@+id/tRepo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Repo"
+                                android:layout_marginLeft="20dp"/>
+                            <TextView
+                                android:id="@+id/Repo"
+                                android:layout_width="15dp"
+                                android:layout_height="20dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="0"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/purple_500"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:layout_toRightOf="@+id/tRepo"/>
+
+                            <View
+                                android:layout_marginLeft="90dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/Varant"/>
+
+                            <TextView
+                                android:id="@+id/tVarant"
+                                android:layout_marginLeft="100dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Varant"
+                                android:paddingLeft="10dp" />
+                            <TextView
+                                android:id="@+id/Varant"
+                                android:layout_width="15dp"
+                                android:layout_height="20dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="0"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/purple_500"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:layout_toRightOf="@+id/tVarant"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/Y.Para"/>
+
+                            <TextView
+                                android:id="@+id/tYPara"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Y.Para"
+                                android:layout_marginLeft="20dp"/>
+                            <TextView
+                                android:id="@+id/YPara"
+                                android:layout_width="15dp"
+                                android:layout_height="20dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="0"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/purple_500"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:layout_toRightOf="@+id/tYPara"/>
+
+                            <View
+                                android:layout_marginLeft="90dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/BPP"/>
+
+                            <TextView
+                                android:id="@+id/tBpp"
+                                android:layout_marginLeft="100dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BPP"
+                                android:paddingLeft="10dp"/>
+                            <TextView
+                                android:id="@+id/Bpp"
+                                android:layout_width="15dp"
+                                android:layout_height="20dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="0"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/purple_500"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:layout_toRightOf="@+id/tBpp"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/Mevduat" />
+
+                            <TextView
+                                android:id="@+id/tMevduat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mevduat"
+                                android:layout_marginLeft="20dp"/>
+                            <TextView
+                                android:id="@+id/Mevduat"
+                                android:layout_width="12dp"
+                                android:layout_height="20dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="0"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/purple_500"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:layout_toRightOf="@+id/tMevduat"/>
+
+                            <View
+                                android:layout_marginLeft="90dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/Nakit"/>
+
+                            <TextView
+                                android:id="@+id/tNakit"
+                                android:layout_marginLeft="100dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nakit"
+                                android:paddingLeft="10dp"/>
+                            <TextView
+                                android:id="@+id/Nakit"
+                                android:layout_width="15dp"
+                                android:layout_height="20dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="0"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/purple_500"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:layout_toRightOf="@+id/tNakit"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
     <androidx.constraintlayout.widget.ConstraintLayout

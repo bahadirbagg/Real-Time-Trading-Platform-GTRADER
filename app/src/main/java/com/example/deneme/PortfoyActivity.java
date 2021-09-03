@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -20,6 +21,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 
 import org.eazegraph.lib.charts.PieChart;
+import org.eazegraph.lib.models.PieModel;
 
 public class PortfoyActivity extends AppCompatActivity {
 
@@ -31,10 +33,16 @@ public class PortfoyActivity extends AppCompatActivity {
     ViewPager2 pager2;
     FragmentAdapter3 adapter;
 
-    TextView tvR;
-    TextView tvPython;
-    TextView tvCPP;
-    TextView tvJava;
+    TextView Pay;
+    TextView Viop;
+    TextView YFon;
+    TextView Bono;
+    TextView Repo;
+    TextView Varant;
+    TextView YPara;
+    TextView Bpp;
+    TextView Mevduat;
+    TextView Nakit;
     PieChart pieChart;
 
 
@@ -63,6 +71,19 @@ public class PortfoyActivity extends AppCompatActivity {
         mToggle = new ActionBarDrawerToggle(this,mDrawer,mToolbar,R.string.nav_open,R.string.nav_close);
         mDrawer.addDrawerListener(mToggle);
         mToggle.syncState();
+
+        Pay = findViewById(R.id.Pay);
+        Viop = findViewById(R.id.Viop);
+        YFon = findViewById(R.id.YFon);
+        Bono = findViewById(R.id.Bono);
+        Repo = findViewById(R.id.Repo);
+        Varant = findViewById(R.id.Varant);
+        YPara = findViewById(R.id.YPara);
+        Bpp = findViewById(R.id.Bpp);
+        Mevduat = findViewById(R.id.Mevduat);
+        Nakit = findViewById(R.id.Nakit);
+        pieChart = (PieChart) findViewById(R.id.piechart);
+        setData();
 
         mNav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
 
@@ -166,4 +187,72 @@ public class PortfoyActivity extends AppCompatActivity {
                     return false;
                 }
             };
+    private void setData()
+    {
+
+
+        Pay.setText(Integer.toString(10));
+        Viop.setText(Integer.toString(10));
+        YFon.setText(Integer.toString(10));
+        Bono.setText(Integer.toString(10));
+        Repo.setText(Integer.toString(10));
+        Varant.setText(Integer.toString(10));
+        YPara.setText(Integer.toString(10));
+        Bpp.setText(Integer.toString(10));
+        Mevduat.setText(Integer.toString(10));
+        Nakit.setText(Integer.toString(10));
+
+        pieChart.addPieSlice(
+                new PieModel(
+                        "Pay",
+                        Integer.parseInt(Pay.getText().toString()),
+                        Color.parseColor("#1CA7E6")));
+        pieChart.addPieSlice(
+                new PieModel(
+                        "Viop",
+                        Integer.parseInt(Viop.getText().toString()),
+                        Color.parseColor("#0C3E0F")));
+        pieChart.addPieSlice(
+                new PieModel(
+                        "YFon",
+                        Integer.parseInt(YFon.getText().toString()),
+                        Color.parseColor("#D18515")));
+        pieChart.addPieSlice(
+                new PieModel(
+                        "Bono",
+                        Integer.parseInt(Bono.getText().toString()),
+                        Color.parseColor("#505A5E")));
+        pieChart.addPieSlice(
+                new PieModel(
+                        "Repo",
+                        Integer.parseInt(Repo.getText().toString()),
+                        Color.parseColor("#47ADFF")));
+        pieChart.addPieSlice(
+                new PieModel(
+                        "Varant",
+                        Integer.parseInt(Varant.getText().toString()),
+                        Color.parseColor("#AA031D")));
+        pieChart.addPieSlice(
+                new PieModel(
+                        "YPara",
+                        Integer.parseInt(YPara.getText().toString()),
+                        Color.parseColor("#DDAA11")));
+        pieChart.addPieSlice(
+                new PieModel(
+                        "Bpp",
+                        Integer.parseInt(Bpp.getText().toString()),
+                        Color.parseColor("#27134C")));
+        pieChart.addPieSlice(
+                new PieModel(
+                        " Mevduat",
+                        Integer.parseInt( Mevduat.getText().toString()),
+                        Color.parseColor("#BA715A")));
+        pieChart.addPieSlice(
+                new PieModel(
+                        "Nakit",
+                        Integer.parseInt(Nakit.getText().toString()),
+                        Color.parseColor("#874D3B")));
+
+        pieChart.startAnimation();
+    }
 }

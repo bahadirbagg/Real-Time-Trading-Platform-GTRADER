@@ -36,7 +36,7 @@ public class ViopActivity extends AppCompatActivity {
     private ActionBarDrawerToggle mToggle;
     TabLayout tabLayout;
     ViewPager2 pager2;
-    FragmentAdapter4 adapter;
+    FragmentAdapter5 adapter;
 
     int minteger = 0;
     int minteger2 = 0;
@@ -168,7 +168,7 @@ public class ViopActivity extends AppCompatActivity {
         });
 
         FragmentManager fm = getSupportFragmentManager();
-        adapter = new FragmentAdapter4(fm,getLifecycle());
+        adapter = new FragmentAdapter5(fm,getLifecycle());
         pager2.setAdapter(adapter);
 
         tabLayout.addTab(tabLayout.newTab().setText("Emirler"));
