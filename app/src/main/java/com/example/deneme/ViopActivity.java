@@ -295,4 +295,15 @@ public class ViopActivity extends AppCompatActivity {
         displayInteger.setText("" + number);
 
     }
+    public void iletildi(View view) {
+        openDialog();
+    }
+
+    private void openDialog() {
+        Dialog2 exampleDialog = new Dialog2();
+        exampleDialog.show(getSupportFragmentManager(),"example dialog");
+        //exampleDialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.dialog_shape));
+
+
+    }
 }

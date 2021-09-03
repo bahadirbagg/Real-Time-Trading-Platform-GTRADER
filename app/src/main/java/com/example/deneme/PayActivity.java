@@ -9,6 +9,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -64,6 +66,7 @@ public class PayActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay);
 
@@ -298,4 +301,16 @@ public class PayActivity extends AppCompatActivity {
         displayInteger.setText("" + number);
 
     }
+    public void iletildi(View view) {
+       openDialog();
     }
+
+    private void openDialog() {
+        Dialog exampleDialog = new Dialog();
+        exampleDialog.show(getSupportFragmentManager(),"example dialog");
+        //exampleDialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.dialog_shape));
+
+
+    }
+
+}

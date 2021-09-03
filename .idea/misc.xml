@@ -7,6 +7,8 @@
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/drawable-anydpi/ic_piyasa.xml" value="0.1125" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/drawable-anydpi/ic_portf.xml" value="0.1125" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1962962962962963" />
+        <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/drawable/add.xml" value="0.1" />
+        <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/drawable/backbutton.xml" value="0.12135416666666667" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/drawable/btn_all.xml" value="0.1" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/drawable/btn_shape.xml" value="0.11822916666666666" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/drawable/btn_shape11.xml" value="0.1" />
@@ -16,6 +18,7 @@
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/drawable/btn_shape33.xml" value="0.1" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/drawable/btn_shape4.xml" value="0.1" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/drawable/btn_shape44.xml" value="0.1" />
+        <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/drawable/dialog_shape.xml" value="0.12135416666666667" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/drawable/ic_box.xml" value="0.1" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/drawable/ic_checkbox.xml" value="0.1" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1962962962962963" />
@@ -25,7 +28,7 @@
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/layout/activity_main.xml" value="0.14" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/layout/activity_pay.xml" value="0.22" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/layout/activity_portfoy.xml" value="0.18" />
-        <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/layout/activity_viop.xml" value="0.5" />
+        <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/layout/activity_viop.xml" value="0.25" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/layout/fragment_emir_pay.xml" value="0.18" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/layout/fragment_emir_vadeli.xml" value="0.15" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/layout/fragment_hesap_nakit.xml" value="0.11875" />
@@ -40,6 +43,8 @@
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/layout/hesabim.xml" value="0.18" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/layout/hesap_nakit.xml" value="0.11875" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/layout/hesap_viop.xml" value="0.25" />
+        <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/layout/layout_dialog.xml" value="0.15" />
+        <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/layout/layout_dialog2.xml" value="0.10520833333333333" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/menu/bottom_navigaiton3.xml" value="0.1" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/menu/bottom_navigation.xml" value="0.1" />
         <entry key="..\:/Users/genexuser/AndroidStudioProjects/DENEME/app/src/main/res/menu/bottom_navigation2.xml" value="0.18854166666666666" />

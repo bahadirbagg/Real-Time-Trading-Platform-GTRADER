@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_shape">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emir Onayı"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alış Emirinin bilgileri aşağıdaki gibidir"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sözleşme Kodu="
+        android:layout_marginTop="80dp"
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mikar="
+        android:layout_marginTop="120dp"
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fiyat="
+        android:layout_marginTop="160dp"
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hacim="
+        android:layout_marginTop="200dp"
+        />
+    <TextView
+        android:id="@+id/onay"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emri onaylıyor musunuz?"
+        android:layout_marginTop="230dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/evet"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="270dp"
+            android:text="Hayır" />
+
+        <Button
+            android:id="@+id/hayır"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:layout_marginLeft="100dp"
+            android:text="Evet" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
